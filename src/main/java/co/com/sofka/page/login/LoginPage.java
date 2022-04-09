@@ -8,6 +8,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.CacheLookup;
 import org.openqa.selenium.support.FindBy;
 
+
 public class LoginPage extends CommonActionOnPages {
 
     private WebDriver webDriver;
@@ -23,8 +24,7 @@ public class LoginPage extends CommonActionOnPages {
     private LoginModel loginModel;
     private static final String MODEL_NULL_MESSAGE = "El modelo del formulario es nulo.";
 
-
-    //Localizadores con WebElement.
+    //Localizadores Login.
 
     @CacheLookup
     @FindBy(name = "txtUsername")
@@ -45,18 +45,16 @@ public class LoginPage extends CommonActionOnPages {
     private WebElement admin;
 
     @CacheLookup
-    @FindBy(linkText = "Job")
+    @FindBy(xpath = "//a[@id='menu_admin_Job']")
     private WebElement adminJob;
 
     @CacheLookup
     @FindBy(id = "menu_admin_viewJobTitleList")
     private WebElement viewJobTitleList;
 
-
     @CacheLookup
     @FindBy(id = "btnAdd")
     private WebElement btnAdd;
-
 
     public void check() throws InterruptedException {
 
@@ -67,11 +65,8 @@ public class LoginPage extends CommonActionOnPages {
 
     public void setJob() throws InterruptedException {
 
-
         clickOn(adminJob);
-
         clickOn(viewJobTitleList);
-
         scrollOn(btnAdd);
         clickOn(btnAdd);
 

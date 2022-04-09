@@ -27,10 +27,7 @@ public class AdminStepDefinition extends WebUI {
             setUpLog4j2();
             setUpWebDriver();
             generalSetUp();
-
             loginModel = new LoginModel();
-
-
 
         } catch (Exception exception){
             quiteDriver();
@@ -52,7 +49,6 @@ public class AdminStepDefinition extends WebUI {
             jobTitlePage = new JobTitlePage(driver,jobTitleModel);
             jobTitlePage.fillJobTitleForm();
 
-
         } catch (Exception exception){
             quiteDriver();
             Assertions.fail(exception.getMessage(), exception);
@@ -63,9 +59,9 @@ public class AdminStepDefinition extends WebUI {
     @Then("show a confirmation message")
     public void showAConfirmationMessage() {
 
-        Assertions.assertEquals("Successfully Saved", jobTitlePage.insert(driver));
+        Assertions.assertEquals("Successfully Saved", jobTitlePage.response(driver));
+        quiteDriver();
 
     }
-
 
 }
