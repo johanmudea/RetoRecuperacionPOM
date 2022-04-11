@@ -1,0 +1,11 @@
+
+z
+java:S1488T"]Immediately return this expression instead of assigning it to the temporary variable "texto".(©®š8õóâ‚0
+”
+java:S11304"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(åÀ°Á8Ó Ú‚0
+G
+java:S1068"1Remove this unused "jobTitleModel" private field.(õÕ†ì
+Q
+java:S1068"6Remove this unused "MODEL_NULL_MESSAGE" private field.(³Ÿ¼×ıÿÿÿÿ
+V
+java:S1068K"9Remove this unused "ATTACHMENT_FILE_PATCH" private field.(ş»ôÂ8ôâ‚0

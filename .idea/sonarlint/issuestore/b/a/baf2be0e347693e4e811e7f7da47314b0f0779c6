@@ -1,0 +1,11 @@
+
+
+java:S1130;"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ÇèÖÁ
+
+java:S1130B"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(óÈœÅ
+”
+java:S1130K"wRemove the declaration of thrown exception 'java.lang.InterruptedException', as it cannot be thrown from method's body.(ÿ»íÁ8šù£è€0
+H
+java:S1068"-Remove this unused "webDriver" private field.(î²Ô›úÿÿÿÿ
+Q
+java:S1068"6Remove this unused "MODEL_NULL_MESSAGE" private field.(³Ÿ¼×ıÿÿÿÿ
